@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: block;
+    margin: 0 auto;
+
+    text-align: center;
+    margin-top: 20px;
+    color: #000;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d4d4d4d0;
+    border-radius: 8px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.452);
+}
+
+.notas {
+    background-color: #bdbcbcf8;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.notas input[type="submit"] {
+    background-color: #2b20a6;
+
+}
+
+.notas input[type="submit"]:hover {
+    background-color: #241a8f;
+}
+
+.botoes {
+    display: flex;
+    /* Usar flexbox para alinhar os botões */
+    justify-content: space-between;
+    /* Espaço entre os botões */
+    margin-top: 10px;
+    /* Margem superior para espaçamento */
+}
+
+.botoes input[type="submit"] {
+    width: 48%;
+    /* Ajusta a largura dos botões para que fiquem lado a lado */
+    padding: 10px;
+    background-color: #2b20a6;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Transição suave para hover */
+}
+
+.botoes input[type="submit"]:hover {
+    background-color: #241a8f;
+    /* Cor do botão ao passar o mouse */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2b20a6;
+    border-radius: 15px;
+    font-size: 1em;
+}
+
+
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    background-color: #2b20a6;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #241a8f;
+}
+
+p {
+    text-align: center;
+    font-size: 1em;
+    color: #000;
+}
+
+div[name="notas"] {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d4d4d4d0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}
+h3 {
+    text-align: center;
+    color: #000;
+}
