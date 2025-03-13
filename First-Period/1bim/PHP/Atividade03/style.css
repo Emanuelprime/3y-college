@@ -2,128 +2,95 @@
 
 body {
     font-family: 'Outfit', sans-serif;
-    background-color: #fff;
+    background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
 }
 
 h1 {
-    display: block;
-    margin: 0 auto;
-
     text-align: center;
-    margin-top: 20px;
-    color: #000;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #d4d4d4d0;
-    border-radius: 8px;
-    box-shadow: 0 0 60px rgba(0, 0, 0, 0.452);
-}
-
-.notas {
-    background-color: #bdbcbcf8;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-.notas input[type="submit"] {
-    background-color: #2b20a6;
-
-}
-
-.notas input[type="submit"]:hover {
-    background-color: #241a8f;
-}
-
-.botoes {
     display: flex;
-    /* Usar flexbox para alinhar os botões */
-    justify-content: space-between;
-    /* Espaço entre os botões */
-    margin-top: 10px;
-    /* Margem superior para espaçamento */
-}
-
-.botoes input[type="submit"] {
-    width: 48%;
-    /* Ajusta a largura dos botões para que fiquem lado a lado */
-    padding: 10px;
-    background-color: #2b20a6;
-    color: #ffffff;
-    border: none;
-    border-radius: 15px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    /* Transição suave para hover */
-}
-
-.botoes input[type="submit"]:hover {
-    background-color: #241a8f;
-    /* Cor do botão ao passar o mouse */
-}
-
-label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #000;
+    flex-direction: column;
 }
 
 input[type="text"],
 input[type="number"] {
-    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #2b20a6;
-    border-radius: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1em;
 }
 
-
-
-input[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
+button {
     padding: 10px;
-    background-color: #2b20a6;
-    color: #ffffff;
+    background-color: #4a90e2;
+    color: #fff;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #241a8f;
+button:hover {
+    background-color: #357ab8;
 }
 
 p {
     text-align: center;
     font-size: 1em;
-    color: #000;
+    color: #333;
 }
 
 div[name="notas"] {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #d4d4d4d0;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+    margin-top: 20px;
 }
 
-h2 {
-    text-align: center;
-    color: #000;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
-h3 {
-    text-align: center;
-    color: #000;
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td {
+    background-color: #fff;
 }
