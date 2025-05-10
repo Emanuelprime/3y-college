@@ -25,7 +25,8 @@ public function store(Request $request)
 // Validação simples: título e gênero são obrigatórios
 $request->validate([
 'titulo' => 'required',
-'genero' => 'required'
+'genero' => 'required',
+'avaliacao' => 'required'
 ]);
 
 // Redireciona de volta com mensagem de sucesso
