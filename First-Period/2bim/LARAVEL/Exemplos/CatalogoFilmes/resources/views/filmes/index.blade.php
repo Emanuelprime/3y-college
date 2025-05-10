@@ -24,6 +24,7 @@
 @csrf
 <input type="text" name="titulo" placeholder="Título do Filme">
 <input type="text" name="genero" placeholder="Gênero">
+<input type="float" name="Avaliação" placeholder="Avaliação">
 <button type="submit">Adicionar</button>
 </form>
 
