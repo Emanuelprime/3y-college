@@ -8,10 +8,13 @@ class SearchCityButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final buttonStyle = MainButtonStyle();
+    final buttonText = ButtonText('Buscar Nova Cidade');
+    
     return ElevatedButton(
       onPressed: onPressed,
-      style: mainButtonStyle,
-      child: const ButtonText('Buscar Nova Cidade'),
+      style: buttonStyle.getStyle(),
+      child: buttonText,
     );
   }
 }

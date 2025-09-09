@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../atoms/button_text.dart';
+import '../atoms/button_style.dart';
 
 class UpdateWeatherButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -6,16 +8,13 @@ class UpdateWeatherButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final buttonStyle = MainButtonStyle();
+    final buttonText = ButtonText('Atualizar Clima');
+    
     return ElevatedButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.lightBlue,
-        foregroundColor: Colors.white,
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-        textStyle: const TextStyle(fontSize: 16),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      ),
-      child: const Text('Atualizar Clima'),
+      style: buttonStyle.getStyle(),
+      child: buttonText,
     );
   }
 }
