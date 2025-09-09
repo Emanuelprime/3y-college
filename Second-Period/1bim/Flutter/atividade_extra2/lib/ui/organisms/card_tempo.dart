@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../atoms/city_name_text.dart';
-import '../atoms/weather_description.dart';
-import '../molecules/icon_temperature_row.dart';
+import '../atoms/cidades.dart';
+import '../atoms/tempo_desc.dart';
+import '../molecules/icone_e_tempo.dart';
 
 class WeatherCard extends StatelessWidget {
   final String cityName;

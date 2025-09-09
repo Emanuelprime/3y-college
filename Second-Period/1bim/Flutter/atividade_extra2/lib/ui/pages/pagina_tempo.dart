@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../organisms/weather_actions.dart';
-import '../organisms/weather_card.dart';
+import '../organisms/conjunto_botoes.dart';
+import '../organisms/card_tempo.dart';
 
 class WeatherPage extends StatefulWidget {
   final String cityName;
@@ -106,18 +106,23 @@ class _WeatherPageState extends State<WeatherPage> {
                     ),
                   ),
                   const SizedBox(height: 40),
-                  AnimatedAlign(
-                    alignment: _searchButtonAlignment,
-                    duration: const Duration(milliseconds: 500),
-                    curve: Curves.easeInOut,
-                    child: WeatherActions(
-                      onUpdateWeather: widget.onUpdateWeather,
-                      onSearchCity: () {
-                        widget.onSearchCity();
-                        _animateSearchButton();
-                      },
+                  SizedBox(
+                    height: 120, 
+                    width: double.infinity,
+                    child: AnimatedAlign(
+                      alignment: _searchButtonAlignment,
+                      duration: const Duration(milliseconds: 500),
+                      curve: Curves.easeInOut,
+                      child: WeatherActions(
+                        onUpdateWeather: widget.onUpdateWeather,
+                        onSearchCity: () {
+                          widget.onSearchCity();
+                          _animateSearchButton();
+                        },
+                      ),
                     ),
                   ),
+                  const SizedBox(height: 20),
                 ],
               ),
       ),

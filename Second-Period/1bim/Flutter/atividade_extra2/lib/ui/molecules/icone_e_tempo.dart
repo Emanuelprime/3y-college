@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../atoms/temperature_text.dart';
-import '../atoms/weather_icon.dart';
+import '../atoms/temperatura.dart';
+import '../atoms/icone.dart';
 
 class IconTemperatureRow extends StatelessWidget {
   final String icon;

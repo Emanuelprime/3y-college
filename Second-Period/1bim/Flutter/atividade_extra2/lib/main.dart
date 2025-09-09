@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'ui/pages/weather_page.dart';
+import 'ui/pages/pagina_tempo.dart';
 
 void main() {
   runApp(const MyApp());

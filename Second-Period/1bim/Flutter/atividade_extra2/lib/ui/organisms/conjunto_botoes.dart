@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../molecules/search_city_button.dart';
-import '../molecules/update_weather_button.dart';
+import '../molecules/botao_cidade.dart';
+import '../molecules/botao_update.dart';
 
 class WeatherActions extends StatelessWidget {
   final VoidCallback onUpdateWeather;
