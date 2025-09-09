@@ -3,7 +3,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'ui/pages/pagina_tempo.dart';
+import 'ui/pages/tempo_page.dart';
 
 void main() {
   runApp(const MyApp());

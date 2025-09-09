@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../atoms/button_text.dart';
+import '../atoms/button_style.dart';
 
 class SearchCityButton extends StatelessWidget {
   final VoidCallback onPressed;
@@ -8,17 +10,8 @@ class SearchCityButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.white,
-        foregroundColor: Colors.lightBlue,
-        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
-        textStyle: const TextStyle(fontSize: 16),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-          side: const BorderSide(color: Colors.lightBlue),
-        ),
-      ),
-      child: const Text('Buscar Nova Cidade'),
+      style: mainButtonStyle,
+      child: const ButtonText('Buscar Nova Cidade'),
     );
   }
 }
